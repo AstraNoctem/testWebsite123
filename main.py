@@ -3,6 +3,9 @@ from myapplication import app
 
 freezer = Freezer(app)
 
+if __name__ == '__main__':
+    freezer.freeze()
+
 @app.route('/home')
 def index():
   return render_template('index.html')
