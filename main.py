@@ -7,7 +7,7 @@ def index():
 
 
 @app.route('/test')
-def index():
+def test():
   return render_template('test.html')
 
 app.run(host='0.0.0.0', port=8080)
