@@ -1,5 +1,7 @@
-from flask import Flask, render_template
-app = Flask('app')
+from flask_frozen import Freezer, render_template
+from myapplication import app
+
+freezer = Freezer(app)
 
 @app.route('/home')
 def index():
